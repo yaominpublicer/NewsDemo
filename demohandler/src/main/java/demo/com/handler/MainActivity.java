@@ -19,43 +19,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        progressBar = (ProgressBar) findViewById(R.id.progressbar_id);
-        button = (Button) findViewById(R.id.button_id);
-
-
-        class ButtonListener implements View.OnClickListener{
-
-
-            @Override
-            public void onClick(View view) {
-                    progressBar.setVisibility(View.VISIBLE);
-
-            }
-        }
-
-
-         final Handler updateHandler=new Handler(){
-
-            @Override
-            public void handleMessage(Message msg) {
-
-
-                super.handleMessage(msg);
-            }
-        };
-
-
-
-        Runnable updateThread=new Runnable() {
-            @Override
-            public void run() {
 
 
 
 
-
-            }
-        };
 
     }
 }
